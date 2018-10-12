@@ -3,6 +3,7 @@
 'use strict';
 
 const allRules = {
+  'accessibility-role': require('./lib/rules/accessibility-role'),
   'no-unused-styles': require('./lib/rules/no-unused-styles'),
   'no-inline-styles': require('./lib/rules/no-inline-styles'),
   'no-color-literals': require('./lib/rules/no-color-literals'),
@@ -27,6 +28,7 @@ module.exports = {
   deprecatedRules: {},
   rules: allRules,
   rulesConfig: {
+    'accessibility-role': 0,
     'no-unused-styles': 0,
     'no-inline-styles': 0,
     'no-color-literals': 0,
